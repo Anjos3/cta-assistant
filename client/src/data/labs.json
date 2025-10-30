@@ -1,0 +1,135 @@
+{
+  "virtualLabs": [
+    {
+      "topic": "Mediciones de las magnitudes físicas",
+      "competencyIds": ["comp1", "comp2"],
+      "labs": []
+    },
+    {
+      "topic": "Movimiento de los cuerpos",
+      "competencyIds": ["comp1", "comp2"],
+      "labs": [
+        {
+          "name": "MRU - Gráfica a-t",
+          "url": "https://www.educaplus.org/game/mru-grafica-a-t",
+          "type": "simulation",
+          "description": "Simulación de movimiento rectilíneo uniforme con gráficas"
+        },
+        {
+          "name": "Movimiento Parabólico",
+          "url": "https://phet.colorado.edu/sims/html/projectile-motion/latest/projectile-motion_all.html",
+          "type": "simulation",
+          "description": "Simulación interactiva de tiro parabólico"
+        }
+      ]
+    },
+    {
+      "topic": "Leyes de Isaac Newton",
+      "competencyIds": ["comp1", "comp2"],
+      "labs": [
+        {
+          "name": "Primera y Segunda Ley de Newton",
+          "url": "https://www.educaplus.org/game/primera-y-segunda-leyes-de-newton",
+          "type": "simulation",
+          "description": "Simulación interactiva de las leyes de Newton"
+        },
+        {
+          "name": "Ejercicio de Dinámica",
+          "url": "https://www.educaplus.org/game/ejercicio-de-dinamica-2",
+          "type": "simulation",
+          "description": "Problemas interactivos de dinámica"
+        }
+      ]
+    },
+    {
+      "topic": "Los fluidos",
+      "competencyIds": ["comp1", "comp2"],
+      "labs": [
+        {
+          "name": "Principio de Arquímedes",
+          "url": "https://www.educaplus.org/game/principio-de-arquimedes",
+          "type": "simulation",
+          "description": "Simulación del principio de Arquímedes"
+        },
+        {
+          "name": "Conceptos Básicos de Flotación",
+          "url": "https://phet.colorado.edu/sims/html/buoyancy-basics/latest/buoyancy-basics_all.html",
+          "type": "simulation",
+          "description": "Simulación de flotación y densidad"
+        }
+      ]
+    },
+    {
+      "topic": "La energía",
+      "competencyIds": ["comp1", "comp2"],
+      "labs": [
+        {
+          "name": "Energía Cinética y Potencial",
+          "url": "https://phet.colorado.edu/sims/html/energy-skate-park-basics/latest/energy-skate-park-basics_all.html?locale=es",
+          "type": "simulation",
+          "description": "Simulación de transformación de energía en un skate park"
+        }
+      ]
+    },
+    {
+      "topic": "Las ondas",
+      "competencyIds": ["comp1", "comp2"],
+      "labs": [
+        {
+          "name": "Laboratorio de Lentes",
+          "url": "https://www.educaplus.org/game/laboratorio-de-lentes",
+          "type": "simulation",
+          "description": "Simulación de óptica y lentes"
+        },
+        {
+          "name": "Prisma Óptico",
+          "url": "https://www.educaplus.org/game/prisma-optico",
+          "type": "simulation",
+          "description": "Simulación de refracción de luz en un prisma"
+        },
+        {
+          "name": "Ondas de Sonido",
+          "url": "https://phet.colorado.edu/sims/html/sound-waves/latest/sound-waves_all.html",
+          "type": "simulation",
+          "description": "Simulación interactiva de ondas sonoras"
+        }
+      ]
+    },
+    {
+      "topic": "La electricidad",
+      "competencyIds": ["comp1", "comp2"],
+      "labs": [
+        {
+          "name": "Campos Eléctricos",
+          "url": "https://phet.colorado.edu/sims/html/charges-and-fields/latest/charges-and-fields_all.html",
+          "type": "simulation",
+          "description": "Simulación de cargas y campos eléctricos"
+        }
+      ]
+    },
+    {
+      "topic": "El magnetismo",
+      "competencyIds": ["comp1", "comp2"],
+      "labs": [
+        {
+          "name": "Ley de Faraday - Electromagnetismo",
+          "url": "https://phet.colorado.edu/sims/html/faradays-electromagnetic-lab/latest/faradays-electromagnetic-lab_all.html",
+          "type": "simulation",
+          "description": "Simulación de inducción electromagnética"
+        }
+      ]
+    },
+    {
+      "topic": "Física moderna",
+      "competencyIds": ["comp1", "comp2"],
+      "labs": [
+        {
+          "name": "Dilatación del Tiempo - Relatividad",
+          "url": "https://www.walter-fendt.de/html5/phes/timedilation_es.htm",
+          "type": "simulation",
+          "description": "Simulación de la teoría de la relatividad"
+        }
+      ]
+    }
+  ]
+}

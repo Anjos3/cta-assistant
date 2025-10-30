@@ -1,0 +1,133 @@
+{
+  "resources": [
+    {
+      "topic": "Mediciones de las magnitudes físicas",
+      "competencyIds": ["comp1", "comp2"],
+      "videos": [
+        {
+          "title": "Magnitudes Físicas",
+          "url": "https://www.youtube.com/watch?v=f_V5o9tfrhQ",
+          "description": "Introducción a las magnitudes físicas y mediciones"
+        }
+      ]
+    },
+    {
+      "topic": "Movimiento de los cuerpos",
+      "competencyIds": ["comp1", "comp2"],
+      "videos": [
+        {
+          "title": "Movimiento - Parte 1",
+          "url": "https://www.youtube.com/watch?v=aqLrtH1gm-Q&utm_source=chatgpt.com",
+          "description": "Conceptos básicos del movimiento"
+        },
+        {
+          "title": "Movimiento - Parte 2",
+          "url": "https://www.youtube.com/watch?pp=0gcJCdgAo7VqN5tD&v=WMo0MoZO9hQ",
+          "description": "Análisis del movimiento de cuerpos"
+        },
+        {
+          "title": "Cinemática",
+          "url": "https://www.youtube.com/watch?v=5v-ukU0FdvE",
+          "description": "Estudio de la cinemática"
+        }
+      ]
+    },
+    {
+      "topic": "Leyes de Isaac Newton",
+      "competencyIds": ["comp1", "comp2"],
+      "videos": [
+        {
+          "title": "Leyes de Newton",
+          "url": "https://www.youtube.com/watch?v=iLt6C1oxmlc",
+          "description": "Las tres leyes de Newton explicadas"
+        }
+      ]
+    },
+    {
+      "topic": "Los fluidos",
+      "competencyIds": ["comp1", "comp2"],
+      "videos": [
+        {
+          "title": "Movimiento de Fluidos",
+          "url": "https://www.youtube.com/watch?pp=ygUUI21vdmltaWVudG9kZWZsdWlkb3M%3D&v=G53gvVh230U",
+          "description": "Estudio del movimiento de fluidos"
+        },
+        {
+          "title": "Fluidos en Reposo",
+          "url": "https://www.youtube.com/watch?v=0o8bqlwGE9M",
+          "description": "Hidrostática y propiedades de los fluidos"
+        }
+      ]
+    },
+    {
+      "topic": "La energía",
+      "competencyIds": ["comp1", "comp2"],
+      "videos": [
+        {
+          "title": "La Energía - Conceptos",
+          "url": "https://www.youtube.com/watch?v=iO7GUgcfJL8",
+          "description": "Conceptos fundamentales de energía"
+        },
+        {
+          "title": "Tipos de Energía",
+          "url": "https://www.youtube.com/watch?v=RB379nJYvxA&t=74s",
+          "description": "Diferentes tipos de energía"
+        },
+        {
+          "title": "Conservación de la Energía",
+          "url": "https://www.youtube.com/watch?v=khTgRuS2yeM",
+          "description": "Principio de conservación de la energía"
+        }
+      ]
+    },
+    {
+      "topic": "Las ondas",
+      "competencyIds": ["comp1", "comp2"],
+      "videos": [
+        {
+          "title": "Las Ondas",
+          "url": "https://www.youtube.com/watch?v=0EPA36B6PTQ",
+          "description": "Introducción a las ondas y sus propiedades"
+        }
+      ]
+    },
+    {
+      "topic": "La electricidad",
+      "competencyIds": ["comp1", "comp2"],
+      "videos": [
+        {
+          "title": "Electricidad",
+          "url": "https://www.youtube.com/watch?v=SYzxtQQSIDA",
+          "description": "Conceptos básicos de electricidad"
+        }
+      ]
+    },
+    {
+      "topic": "El magnetismo",
+      "competencyIds": ["comp1", "comp2"],
+      "videos": [
+        {
+          "title": "Magnetismo",
+          "url": "https://www.youtube.com/watch?v=SYzxtQQSIDA",
+          "description": "Introducción al magnetismo"
+        }
+      ]
+    },
+    {
+      "topic": "Física moderna",
+      "competencyIds": ["comp1", "comp2"],
+      "videos": [
+        {
+          "title": "Física Moderna - Parte 1",
+          "url": "https://www.youtube.com/watch?v=WAS1M3wggug&t=54s",
+          "description": "Introducción a la física moderna"
+        },
+        {
+          "title": "Física Moderna - Parte 2",
+          "url": "https://www.youtube.com/watch?v=Cr8ZUnDwbDo",
+          "description": "Conceptos avanzados de física moderna"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "name": "cta-assistant",
+  "version": "1.0.0",
+  "description": "Asistente educativo IA para CTA - 5to Secundaria",
+  "scripts": {
+    "install-client": "cd client && npm install",
+    "install-server": "cd server && npm install",
+    "build-client": "cd client && npm run build",
+    "build": "npm run install-client && npm run install-server && npm run build-client",
+    "start": "cd server && node server.js",
+    "dev-client": "cd client && npm run dev",
+    "dev-server": "cd server && npm run dev"
+  },
+  "keywords": ["education", "ai", "cta", "peru", "secondary"],
+  "author": "",
+  "license": "MIT"
+}
