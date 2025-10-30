@@ -3,12 +3,12 @@ import cors from 'cors'
 import dotenv from 'dotenv'
 import path from 'path'
 import { fileURLToPath } from 'url'
-import chatRoutes from './routes/chat.js'
-
-dotenv.config()
 
 const __filename = fileURLToPath(import.meta.url)
 const __dirname = path.dirname(__filename)
+
+// Load .env file with explicit path for ES modules
+dotenv.config({ path: path.join(__dirname, '.env') })
 
 const app = express()
 const PORT = process.env.PORT || 3000
@@ -23,7 +23,8 @@ app.use((req, res, next) => {
   next()
 })
 
-// API Routes
+// API Routes - use dynamic import to ensure .env is loaded first
+const { default: chatRoutes } = await import('./routes/chat.js')
 app.use('/api/chat', chatRoutes)
 
 // Serve static files from React build in production
