@@ -11,17 +11,17 @@ function Home() {
 
   return (
     <div className="max-w-6xl mx-auto">
-      <div className="mb-8">
-        <h2 className="text-4xl font-bold text-gray-800 mb-3">
+      <div className="mb-6 sm:mb-8">
+        <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-gray-800 mb-3">
           Bienvenido al Asistente de CTA
         </h2>
-        <p className="text-lg text-gray-600">
+        <p className="text-base sm:text-lg text-gray-600">
           Explora las competencias, accede a videos educativos, laboratorios virtuales
           y consulta con la IA sobre tus temas de estudio.
         </p>
       </div>
 
-      <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6">
         {competencies.map((competency) => (
           <Link
             key={competency.id}
@@ -36,7 +36,7 @@ function Home() {
               >
                 {competency.id.replace('comp', '')}
               </div>
-              <h3 className="text-xl font-bold text-gray-800 mb-2">
+              <h3 className="text-lg sm:text-xl font-bold text-gray-800 mb-2">
                 {competency.name}
               </h3>
             </div>
@@ -66,8 +66,8 @@ function Home() {
         ))}
       </div>
 
-      <div className="mt-12 card bg-blue-50 border-l-4 border-blue-500">
-        <h3 className="text-xl font-bold text-gray-800 mb-2">
+      <div className="mt-8 sm:mt-12 card bg-blue-50 border-l-4 border-blue-500">
+        <h3 className="text-lg sm:text-xl font-bold text-gray-800 mb-2">
           ¿Cómo usar el asistente?
         </h3>
         <ul className="space-y-2 text-gray-700">

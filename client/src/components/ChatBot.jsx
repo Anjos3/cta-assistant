@@ -62,20 +62,20 @@ function ChatBot({ competency, currentTopic }) {
 
   return (
     <div className="flex flex-col h-full">
-      <div className="flex-1 overflow-y-auto p-4 space-y-4">
+      <div className="flex-1 overflow-y-auto p-3 sm:p-4 space-y-3 sm:space-y-4">
         {messages.map((msg, index) => (
           <div
             key={index}
             className={`flex ${msg.role === 'user' ? 'justify-end' : 'justify-start'}`}
           >
             <div
-              className={`max-w-[80%] p-3 rounded-lg ${
+              className={`max-w-[90%] sm:max-w-[80%] p-2 sm:p-3 rounded-lg ${
                 msg.role === 'user'
                   ? 'bg-primary text-white'
                   : 'bg-gray-100 text-gray-800'
               }`}
             >
-              <p className="text-sm whitespace-pre-wrap">{msg.content}</p>
+              <p className="text-xs sm:text-sm whitespace-pre-wrap">{msg.content}</p>
             </div>
           </div>
         ))}
@@ -93,7 +93,7 @@ function ChatBot({ competency, currentTopic }) {
         <div ref={messagesEndRef} />
       </div>
 
-      <div className="border-t p-4">
+      <div className="border-t p-3 sm:p-4">
         <div className="flex gap-2">
           <input
             type="text"
@@ -101,13 +101,13 @@ function ChatBot({ competency, currentTopic }) {
             onChange={(e) => setInput(e.target.value)}
             onKeyPress={handleKeyPress}
             placeholder="Escribe tu pregunta..."
-            className="flex-1 px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary"
+            className="flex-1 px-2 py-1.5 sm:px-3 sm:py-2 text-xs sm:text-sm border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary"
             disabled={loading}
           />
           <button
             onClick={sendMessage}
             disabled={loading || !input.trim()}
-            className="px-4 py-2 bg-primary text-white rounded-lg hover:bg-blue-600 disabled:bg-gray-300 disabled:cursor-not-allowed transition-colors"
+            className="px-3 py-1.5 sm:px-4 sm:py-2 text-xs sm:text-sm bg-primary text-white rounded-lg hover:bg-blue-600 disabled:bg-gray-300 disabled:cursor-not-allowed transition-colors"
           >
             {loading ? '...' : 'Enviar'}
           </button>

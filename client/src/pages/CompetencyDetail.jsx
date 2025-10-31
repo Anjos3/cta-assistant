@@ -37,25 +37,25 @@ function CompetencyDetail() {
         ← Volver a competencias
       </Link>
 
-      <div className="card border-t-4 mb-8" style={{ borderTopColor: competency.color }}>
-        <div className="flex items-start gap-4 mb-4">
+      <div className="card border-t-4 mb-6 sm:mb-8" style={{ borderTopColor: competency.color }}>
+        <div className="flex items-start gap-3 sm:gap-4 mb-4">
           <div
-            className="w-16 h-16 rounded-full flex items-center justify-center text-white text-2xl font-bold flex-shrink-0"
+            className="w-12 h-12 sm:w-16 sm:h-16 rounded-full flex items-center justify-center text-white text-xl sm:text-2xl font-bold flex-shrink-0"
             style={{ backgroundColor: competency.color }}
           >
             {competency.id.replace('comp', '')}
           </div>
           <div className="flex-1">
-            <h1 className="text-3xl font-bold text-gray-800 mb-2">
+            <h1 className="text-2xl sm:text-3xl font-bold text-gray-800 mb-2">
               {competency.name}
             </h1>
-            <p className="text-gray-600">{competency.description}</p>
+            <p className="text-sm sm:text-base text-gray-600">{competency.description}</p>
           </div>
         </div>
 
         <div className="mt-6">
-          <h3 className="font-bold text-lg mb-3 text-gray-800">Capacidades:</h3>
-          <ul className="grid md:grid-cols-2 gap-3">
+          <h3 className="font-bold text-base sm:text-lg mb-3 text-gray-800">Capacidades:</h3>
+          <ul className="grid grid-cols-1 md:grid-cols-2 gap-2 sm:gap-3">
             {competency.capacidades.map((cap, index) => (
               <li key={index} className="flex items-start">
                 <span
@@ -72,13 +72,13 @@ function CompetencyDetail() {
       </div>
 
       <div className="mb-6">
-        <h2 className="text-2xl font-bold text-gray-800 mb-4">Temas</h2>
-        <div className="flex flex-wrap gap-2">
+        <h2 className="text-xl sm:text-2xl font-bold text-gray-800 mb-4">Temas</h2>
+        <div className="flex flex-wrap gap-2 sm:gap-3">
           {competency.topics.map((topic, index) => (
             <button
               key={index}
               onClick={() => setSelectedTopic(topic)}
-              className={`px-4 py-2 rounded-lg font-medium transition-colors ${
+              className={`px-3 py-1.5 sm:px-4 sm:py-2 text-sm sm:text-base rounded-lg font-medium transition-colors ${
                 selectedTopic === topic
                   ? 'text-white'
                   : 'bg-white text-gray-700 hover:bg-gray-100'
@@ -102,18 +102,18 @@ function CompetencyDetail() {
         />
       )}
 
-      <div className="fixed bottom-6 right-6 z-50">
+      <div className="fixed bottom-4 right-4 sm:bottom-6 sm:right-6 z-50">
         {!showChat ? (
           <button
             onClick={() => setShowChat(true)}
-            className="w-16 h-16 rounded-full text-white shadow-lg hover:scale-110 transition-transform flex items-center justify-center text-2xl"
+            className="w-14 h-14 sm:w-16 sm:h-16 rounded-full text-white shadow-lg hover:scale-110 transition-transform flex items-center justify-center text-xl sm:text-2xl"
             style={{ backgroundColor: competency.color }}
             title="Abrir chat con IA"
           >
             💬
           </button>
         ) : (
-          <div className="bg-white rounded-lg shadow-2xl w-96 h-[500px] flex flex-col">
+          <div className="bg-white rounded-lg shadow-2xl w-[95vw] sm:w-96 h-[85vh] sm:h-[500px] flex flex-col">
             <div
               className="p-4 text-white rounded-t-lg flex justify-between items-center"
               style={{ backgroundColor: competency.color }}
